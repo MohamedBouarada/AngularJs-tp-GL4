@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="left">
+    <div>
+      <img src="/assets/{{ image }}" alt="mohamed" class="image" />
+      <div class="name">{{ firstName }} {{ lastName }}</div>
+      <div class="job">{{ job }}</div>
+      <div class="quote">{{ quote }}</div>
+      <div class="jobDescription">{{ jobDescription }}</div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="form">
+      <div class="fullInput">
+        <div class="inputTitle">first name</div>
+        <input type="text" class="input" [(ngModel)]="firstName" />
+      </div>
+      <div class="fullInput">
+        <div class="inputTitle">last name</div>
+        <input type="text" class="input" [(ngModel)]="lastName" />
+      </div>
+      <div class="fullInput">
+        <div class="inputTitle">job</div>
+        <input type="text" class="input" [(ngModel)]="job" />
+      </div>
+      <div class="fullInput">
+        <div class="inputTitle">your job description</div>
+        <input type="text" class="input" [(ngModel)]="jobDescription" />
+      </div>
+      <div class="fullInput">
+        <div class="inputTitle">quote</div>
+        <input type="text" class="input" [(ngModel)]="quote" />
+      </div>
+
+      <div class="fullInput">
+        <div class="inputTitle">image path</div>
+        <input type="text" class="input" [(ngModel)]="image" />
+      </div>
+    </div>
+  </div>
+</div>
