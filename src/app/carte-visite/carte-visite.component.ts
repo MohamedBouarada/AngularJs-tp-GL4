@@ -12,6 +12,7 @@ export class CarteVisiteComponent implements OnInit {
   job:string = "Software engineer"
   quote:string = `"Lamborghini Mercy Your chick she so thirsty I'm in that two seat Lambo"`
   jobDescription:string="etudiant en 2ème année cycle d'ingénieur en génie logiciel à l insat"
+  Keywords:string="HTML , CSS , Angularjs ,JS ,PHP"
   rotate:boolean=false
   constructor() { }
 

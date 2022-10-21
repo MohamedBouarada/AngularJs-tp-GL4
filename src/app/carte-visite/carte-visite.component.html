@@ -1,12 +1,23 @@
 <div class="container">
   <div class="left">
-    <div>
+    <div class="leftContent">
+
+    
+    <div *ngIf="!rotate">
       <img src="/assets/{{ image }}" alt="mohamed" class="image" />
       <div class="name">{{ firstName }} {{ lastName }}</div>
       <div class="job">{{ job }}</div>
       <div class="quote">{{ quote }}</div>
-      <div class="jobDescription">{{ jobDescription }}</div>
+      
     </div>
+    <div *ngIf="rotate" class="secondView">
+        <div class="jobDescription">{{ jobDescription }}</div>
+        <div class="keywords">{{ Keywords }}</div>
+    </div>
+</div>
+    <div class="buttonContainer">
+        <button (click)="setRotate()" class="rotateButton">rotate</button>
+       </div>
   </div>
   <div class="right">
     <div class="form">
@@ -30,7 +41,10 @@
         <div class="inputTitle">quote</div>
         <input type="text" class="input" [(ngModel)]="quote" />
       </div>
-
+      <div class="fullInput">
+        <div class="inputTitle">Keywords of your work</div>
+        <input type="text" class="input" [(ngModel)]="Keywords" />
+      </div>
       <div class="fullInput">
         <div class="inputTitle">image path</div>
         <input type="text" class="input" [(ngModel)]="image" />

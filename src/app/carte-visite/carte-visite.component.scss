@@ -8,18 +8,26 @@
     width: 45%;
     height: 70vh;
     border-radius: 20px;
-    padding: 20px;
+   
     box-shadow: 0px 12px 30px 0px rgba(128, 127, 127, 0.34);
     align-items: center;
     text-align: center;
+    position: relative;
+}
+.leftContent{
+    padding: 20px;
 }
 .right{
     margin-left: 10%;
     width: 45%;
     height: 70vh;
     box-shadow: 0px 12px 30px 0px rgba(128, 127, 127, 0.34);
-    padding: 20px;
+    //padding: 20px;
     border-radius: 20px;
+}
+.form{
+    padding: 20px;
+
 }
 .image{
     width: 250px;
@@ -70,4 +78,34 @@
 .quote{
     margin-bottom: 5%;
     color: rgb(0, 0, 0);
+}
+.buttonContainer{
+    position: absolute;
+    bottom: 10px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+}
+.rotateButton{
+    align-items: center;
+    text-align: center;
+    color: rgb(14, 14, 82);
+    background-color: white;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.rotateButton:hover{
+    background-color: rgb(14, 14, 82);
+    color: white;
+}
+.secondView{
+    margin-top: 10%;
+}
+.keywords{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: rgba(16, 15, 15, 0.621);
+    font-size: larger;
 }
