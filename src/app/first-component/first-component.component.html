@@ -1,0 +1,6 @@
+<div class="container" [style.backgroundColor]="color">
+   Color : <input #newColor type="text" placeholder="white" [value]="color" (change)="setColor(newColor.value)" class="inputText"/>
+   <div>
+    <button (click)="setColor('white')" class="button">reset color</button>
+  </div>
+</div>
