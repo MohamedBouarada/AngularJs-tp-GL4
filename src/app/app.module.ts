@@ -7,12 +7,14 @@ import { FirstComponentComponent } from './first-component/first-component.compo
 import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ColorChildComponent } from './color-child/color-child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponentComponent,
-    CarteVisiteComponent
+    CarteVisiteComponent,
+    ColorChildComponent
   ],
   imports: [
     CommonModule,

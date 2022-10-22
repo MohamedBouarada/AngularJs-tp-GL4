@@ -1,0 +1,9 @@
+<div>
+    my parent color is {{parentColor}}
+</div>
+
+<div class="inputContainer">
+    my favorite color is : <input type="text" #favColor/>
+
+    <button (click)="changeFavoriteColor(favColor.value)"> change color</button>
+</div>
