@@ -12,6 +12,8 @@ import { CvComponent } from './cv/cv.component';
 import { ListeComponent } from './liste/liste.component';
 import { DetailComponent } from './detail/detail.component';
 import { ItemComponent } from './item/item.component';
+import { MiniWordComponent } from './mini-word/mini-word.component';
+import { RainbowDirective } from './rainbow.directive';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ItemComponent } from './item/item.component';
     ListeComponent,
     DetailComponent,
     ItemComponent,
+    MiniWordComponent,
+    RainbowDirective
   ],
   imports: [
     CommonModule,
