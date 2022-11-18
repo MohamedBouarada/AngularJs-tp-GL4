@@ -1,0 +1,11 @@
+
+<div class="container">
+
+    <div class="side">
+      <app-liste [dataList]="list" (newChangeItemEvent)="changeCvItem($event)"></app-liste>
+    </div>
+  
+    <div class="side">
+    <app-detail [singleItem]="singleCv"></app-detail>
+    </div>
+  </div>

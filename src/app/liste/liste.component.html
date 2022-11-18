@@ -1,0 +1,5 @@
+<div *ngFor="let item of dataList">
+    <div >
+  <app-item (changeItemIndex)="changeCurrentIndex($event)"  [item]="item"></app-item>
+    </div>
+  </div>

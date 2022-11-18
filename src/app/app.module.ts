@@ -8,13 +8,21 @@ import { CarteVisiteComponent } from './carte-visite/carte-visite.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ColorChildComponent } from './color-child/color-child.component';
+import { CvComponent } from './cv/cv.component';
+import { ListeComponent } from './liste/liste.component';
+import { DetailComponent } from './detail/detail.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponentComponent,
     CarteVisiteComponent,
-    ColorChildComponent
+    ColorChildComponent,
+    CvComponent,
+    ListeComponent,
+    DetailComponent,
+    ItemComponent,
   ],
   imports: [
     CommonModule,
