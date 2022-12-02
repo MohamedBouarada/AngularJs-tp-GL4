@@ -2,10 +2,11 @@
 <div class="container">
 
     <div class="side">
-      <app-liste [dataList]="list" (newChangeItemEvent)="changeCvItem($event)"></app-liste>
+      <app-liste  (newChangeItemEvent)="changeCvItem($event)"></app-liste>
     </div>
   
     <div class="side">
-    <app-detail [singleItem]="singleCv"></app-detail>
+    <app-detail [singleItem]="singleCv"  ></app-detail>
     </div>
   </div>
+  <app-embauche></app-embauche>

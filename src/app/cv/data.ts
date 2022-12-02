@@ -9,7 +9,7 @@ export const cvList:IItem[] = [
     age:'22',
     cin:'11111111',
     job:'software engineer',
-    path:'bo31.jpg'
+    path:'racem.jpg'
   },
   {
     id:2,
@@ -27,15 +27,15 @@ export const cvList:IItem[] = [
     age:'36',
     cin:'33333333',
     job:'teacher',
-    path:'bo32.jpg'
+    path:''
   },
   {
     id:4,
-    name: 'benrhayem',
-    firstname: 'mohamed',
+    name: 'mahdi',
+    firstname: 'Ghorbel',
     age:'40',
     cin:'44444444',
     job:'system administrator',
-    path:'logoInsat.png'
+    path:'mahdi.jpg'
   },
 ]

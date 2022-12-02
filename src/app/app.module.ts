@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './first-component/first-component.component';
@@ -14,6 +14,11 @@ import { DetailComponent } from './detail/detail.component';
 import { ItemComponent } from './item/item.component';
 import { MiniWordComponent } from './mini-word/mini-word.component';
 import { RainbowDirective } from './rainbow.directive';
+import { CvItemDirective } from './cv-item.directive';
+import { CvDetailDirective } from './cv-detail.directive';
+import { DefaultImagePipe } from './default-image.pipe';
+import { EmbaucheComponent } from './embauche/embauche.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -26,13 +31,19 @@ import { RainbowDirective } from './rainbow.directive';
     DetailComponent,
     ItemComponent,
     MiniWordComponent,
-    RainbowDirective
+    RainbowDirective,
+    CvItemDirective,
+    CvDetailDirective,
+    DefaultImagePipe,
+    EmbaucheComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot(), 
   ],
   providers: [],
   bootstrap: [AppComponent]

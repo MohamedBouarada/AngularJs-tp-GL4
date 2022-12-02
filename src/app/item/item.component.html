@@ -1,6 +1,6 @@
-<div class="container" (click)="changeIndex()">
+<div class="container" (click)="changeIndex()" appCvItem >
     <div>
-    <img src="/assets/images/{{item.path}}" alt="profile" class="image">
+    <img src="/assets/images/{{item.path | defaultImage }}" alt="profile" class="image">
     </div>
   
     <div>  {{item.name}} {{item.firstname}}

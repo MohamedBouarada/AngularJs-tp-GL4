@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container" appCvDetail >
     <div>
-      <img src="/assets/images/{{singleItem.path}}" alt=" " class="image">
+      <img  src="/assets/images/{{singleItem.path | defaultImage}}" alt=" " class="image"  >
     </div>
     <div>
       {{singleItem.name}} {{singleItem.firstname}}
@@ -10,5 +10,8 @@
     </div>
     <div>
       {{singleItem.job}}
+    </div>
+    <div *ngIf="singleItem" >
+      <button (click)="embaucher()" >embaucher </button>
     </div>
   </div>

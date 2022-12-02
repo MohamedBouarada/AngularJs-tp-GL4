@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { IItem } from './item.interface';
+import { CvService } from '../cv.service';
 
 @Component({
   selector: 'app-liste',
@@ -8,16 +9,19 @@ import { IItem } from './item.interface';
 })
 export class ListeComponent implements OnInit {
 
-  @Input()
+  
   dataList! :IItem[] ;
 
 
   @Output()
   newChangeItemEvent = new EventEmitter<IItem>()
 
-  constructor() { }
+  constructor(private cvService:CvService) {
+    this.dataList=this.cvService.getCv();
+   }
 
   ngOnInit(): void {
+    
   }
 
   changeCurrentIndex (newVal:IItem) {

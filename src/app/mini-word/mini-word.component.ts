@@ -12,7 +12,7 @@ export class MiniWordComponent implements OnInit {
   font :string ;
   constructor() {
     this.color = "black";
-    this.size = "16px";
+    this.size = "23";
     this.font = "Arial"
    }
 
