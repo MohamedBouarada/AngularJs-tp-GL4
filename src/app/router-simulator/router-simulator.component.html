@@ -1,0 +1,13 @@
+<!-- <select   #selectField>
+    <option [routerLink]="['/cv']" >cv </option>
+    <option [routerLink]="['/carte-visite']" >Carte Visite</option>
+    <option [routerLink]="['/mini-word']" >miniword</option>
+    <option [routerLink]="['/first-component']" >Color</option>
+</select>  -->
+<select  (change)="changeRoute(selectField.value)" #selectField class="dropdown">
+    <option value=""></option>
+    <option value="cv" >cv </option>
+    <option [value]="['/carte-visite']" >Carte Visite</option>
+    <option [value]="['/mini-word']" >miniword</option>
+    <option [value]="['/first-component']" >Color</option>
+</select> 
