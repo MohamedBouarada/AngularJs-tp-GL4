@@ -19,6 +19,7 @@ import { CvDetailDirective } from './cv-detail.directive';
 import { DefaultImagePipe } from './default-image.pipe';
 import { EmbaucheComponent } from './embauche/embauche.component';
 import { ToastrModule } from 'ngx-toastr';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ToastrModule } from 'ngx-toastr';
     CvItemDirective,
     CvDetailDirective,
     DefaultImagePipe,
-    EmbaucheComponent
+    EmbaucheComponent,
+    NavBarComponent
   ],
   imports: [
     CommonModule,
