@@ -22,6 +22,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { AuthentificationComponent } from './authentification/authentification.component';
 
 @NgModule({
   declarations: [
@@ -42,12 +43,14 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     NavBarComponent,
     RouterSimulatorComponent,
     UserDetailsComponent,
+    AuthentificationComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule, 
     ToastrModule.forRoot(), 
   ],

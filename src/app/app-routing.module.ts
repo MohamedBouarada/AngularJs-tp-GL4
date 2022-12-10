@@ -6,17 +6,19 @@ import { ColorChildComponent } from './color-child/color-child.component';
 import { CvComponent } from './cv/cv.component';
 import { MiniWordComponent } from './mini-word/mini-word.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { AuthentificationComponent } from './authentification/authentification.component';
 
 const routes: Routes = [
   { path: 'first-component', component: FirstComponentComponent },
   { path: 'carte-visite', component: CarteVisiteComponent },
   { path: 'cv', component: CvComponent },
   { path: 'mini-word', component: MiniWordComponent },
-  {path: 'cv/:id', component: UserDetailsComponent}
+  { path: 'cv/:id', component: UserDetailsComponent },
+  { path: 'authentification', component: AuthentificationComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
