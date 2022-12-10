@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Profile } from './profile';
 
 @Component({
   selector: 'app-carte-visite',
@@ -13,6 +14,8 @@ export class CarteVisiteComponent implements OnInit {
   quote:string = `"Lamborghini Mercy Your chick she so thirsty I'm in that two seat Lambo"`
   jobDescription:string="etudiant en 2ème année cycle d'ingénieur en génie logiciel à l insat"
   Keywords:string="HTML , CSS , Angularjs ,JS ,PHP"
+
+  profile :Profile=new Profile();
   rotate:boolean=false
   constructor() { }
 

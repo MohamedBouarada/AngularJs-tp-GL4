@@ -1,20 +1,26 @@
-<div class="container" appCvDetail >
-    <div>
-      <img  src="/assets/images/{{singleItem.path | defaultImage}}" alt=" " class="image"  >
+<div class="container" appCvDetail>
+  <div>
+    <img
+      src="/assets/images/{{ singleItem.path | defaultImage }}"
+      alt=" "
+      class="image"
+    />
+  </div>
+  <div>{{ singleItem.name }} {{ singleItem.firstname }}</div>
+  <div>
+    {{ singleItem.age }}
+  </div>
+  <div>
+    {{ singleItem.job }}
+  </div>
+  <div class="buttonsContainer">
+    <div *ngIf="singleItem">
+      <button (click)="embaucher()" class="embaucheButton">embaucher</button>
     </div>
-    <div>
-      {{singleItem.name}} {{singleItem.firstname}}
-    </div>
-    <div>
-      {{singleItem.age}}
-    </div>
-    <div>
-      {{singleItem.job}}
-    </div>
-    <div *ngIf="singleItem" >
-      <button (click)="embaucher()" >embaucher </button>
-    </div>
-    <div *ngIf="singleItem" >
-      <button (click)="navigateToCv(singleItem.id)" >Details</button>
+    <div *ngIf="singleItem">
+      <button (click)="navigateToCv(singleItem.id)" class="detailsButton">
+        more details
+      </button>
     </div>
   </div>
+</div>

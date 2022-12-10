@@ -4,15 +4,15 @@
 
     
     <div *ngIf="!rotate">
-      <img src="/assets/{{ image }}" alt="mohamed" class="image" />
-      <div class="name">{{ firstName }} {{ lastName }}</div>
-      <div class="job">{{ job }}</div>
-      <div class="quote">{{ quote }}</div>
+      <img src="/assets/{{ profile.image }}" alt="mohamed" class="image" />
+      <div class="name">{{ profile.firstName }} {{ profile.lastName }}</div>
+      <div class="job">{{ profile.job }}</div>
+      <div class="quote">{{ profile.quote }}</div>
       
     </div>
     <div *ngIf="rotate" class="secondView">
-        <div class="jobDescription">{{ jobDescription }}</div>
-        <div class="keywords">{{ Keywords }}</div>
+        <div class="jobDescription">{{ profile.jobDescription }}</div>
+        <div class="keywords">{{ profile.Keywords }}</div>
     </div>
 </div>
     <div class="buttonContainer">
@@ -23,31 +23,31 @@
     <div class="form">
       <div class="fullInput">
         <div class="inputTitle">first name</div>
-        <input type="text" class="input" [(ngModel)]="firstName" />
+        <input type="text" class="input" [(ngModel)]="profile.firstName" />
       </div>
       <div class="fullInput">
         <div class="inputTitle">last name</div>
-        <input type="text" class="input" [(ngModel)]="lastName" />
+        <input type="text" class="input" [(ngModel)]="profile.lastName" />
       </div>
       <div class="fullInput">
         <div class="inputTitle">job</div>
-        <input type="text" class="input" [(ngModel)]="job" />
+        <input type="text" class="input" [(ngModel)]="profile.job" />
       </div>
       <div class="fullInput">
         <div class="inputTitle">your job description</div>
-        <input type="text" class="input" [(ngModel)]="jobDescription" />
+        <input type="text" class="input" [(ngModel)]="profile.jobDescription" />
       </div>
       <div class="fullInput">
         <div class="inputTitle">quote</div>
-        <input type="text" class="input" [(ngModel)]="quote" />
+        <input type="text" class="input" [(ngModel)]="profile.quote" />
       </div>
       <div class="fullInput">
         <div class="inputTitle">Keywords of your work</div>
-        <input type="text" class="input" [(ngModel)]="Keywords" />
+        <input type="text" class="input" [(ngModel)]="profile.Keywords" />
       </div>
       <div class="fullInput">
         <div class="inputTitle">image path</div>
-        <input type="text" class="input" [(ngModel)]="image" />
+        <input type="text" class="input" [(ngModel)]="profile.image" />
       </div>
     </div>
   </div>
