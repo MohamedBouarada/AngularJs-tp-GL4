@@ -19,4 +19,5 @@ export class EmbaucheService {
   getCv() {
     return this.listeEmbauche;
   }
+  
 }

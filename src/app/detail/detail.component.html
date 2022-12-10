@@ -14,4 +14,7 @@
     <div *ngIf="singleItem" >
       <button (click)="embaucher()" >embaucher </button>
     </div>
+    <div *ngIf="singleItem" >
+      <button (click)="navigateToCv(singleItem.id)" >Details</button>
+    </div>
   </div>

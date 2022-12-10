@@ -2,6 +2,7 @@ import { Component, Input, OnInit} from '@angular/core';
 import {IItem} from "../liste/item.interface";
 import { EmbaucheService } from '../embauche.service';
 import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-detail',
@@ -14,7 +15,7 @@ export class DetailComponent implements OnInit {
   singleItem!:IItem
 
   bool:boolean=false;
-  constructor(private embaucheService:EmbaucheService,private toastr: ToastrService) { }
+  constructor(private embaucheService:EmbaucheService,private toastr: ToastrService,private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -27,5 +28,9 @@ export class DetailComponent implements OnInit {
       this.toastr.warning(`c'est déja embauché`,'oops!')
     }
   }
+
+  navigateToCv(id : number) {
+    this.router.navigate(['/cv',id.toString()]);
+}
 
 }

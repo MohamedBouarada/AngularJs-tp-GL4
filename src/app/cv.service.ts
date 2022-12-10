@@ -12,6 +12,8 @@ export class CvService {
   getCv(){
     return this.cvList;
   }
-
+  getCvById(id : Number): any{
+    return this.cvList.find(cv => cv.id === id);
+  }
   constructor() { }
 }

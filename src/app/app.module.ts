@@ -21,6 +21,7 @@ import { EmbaucheComponent } from './embauche/embauche.component';
 import { ToastrModule } from 'ngx-toastr';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { RouterSimulatorComponent } from './router-simulator/router-simulator.co
     DefaultImagePipe,
     EmbaucheComponent,
     NavBarComponent,
-    RouterSimulatorComponent
+    RouterSimulatorComponent,
+    UserDetailsComponent,
   ],
   imports: [
     CommonModule,
