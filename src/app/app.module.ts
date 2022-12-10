@@ -24,6 +24,7 @@ import { RouterSimulatorComponent } from './router-simulator/router-simulator.co
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
 import { AddCvFormComponent } from './add-cv-form/add-cv-form.component';
+import { NonStopImagesComponent } from './non-stop-images/non-stop-images.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { AddCvFormComponent } from './add-cv-form/add-cv-form.component';
     UserDetailsComponent,
     AuthentificationComponent,
     AddCvFormComponent,
+    NonStopImagesComponent,
   ],
   imports: [
     CommonModule,
