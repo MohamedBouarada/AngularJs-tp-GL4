@@ -23,4 +23,12 @@ export class CvService {
       this.cvList.splice(idx, 1);
     }
   }
+  addCv(cv: IItem) {
+    cv.id = cvList.length+1;
+    console.log('====================================');
+    console.log(cv.path);
+    console.log('====================================');
+    this.cvList.push(cv);
+  }
+  
 }

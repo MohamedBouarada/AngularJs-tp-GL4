@@ -7,6 +7,7 @@ import { CvComponent } from './cv/cv.component';
 import { MiniWordComponent } from './mini-word/mini-word.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
+import { AddCvFormComponent } from './add-cv-form/add-cv-form.component';
 
 const routes: Routes = [
   { path: 'first-component', component: FirstComponentComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'mini-word', component: MiniWordComponent },
   { path: 'cv/:id', component: UserDetailsComponent },
   { path: 'authentification', component: AuthentificationComponent },
+  { path: 'addCv', component: AddCvFormComponent },
 ];
 
 @NgModule({

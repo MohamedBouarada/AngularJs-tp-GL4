@@ -1,0 +1,182 @@
+<div class="container">
+  <form [formGroup]="form" (ngsubmit)="submitForm()">
+    <div class="input-group mb-3">
+      <label>name :</label>
+      <input
+        type="text"
+        id="name"
+        class="form-control"
+        formControlName="name"
+        required
+        name="name"
+        [(ngModel)]="cv.name"
+      />
+
+      <div
+        *ngIf="form.controls['name'].dirty && (form.controls['name'].errors?.['required']) "
+        class="alert alert-danger"
+      >
+        <div
+          *ngIf="form.controls['name'].errors?.['required']"
+          class="errorMessage"
+        >
+          name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <label>firstName :</label>
+      <input
+        type="text"
+        id="firstname"
+        class="form-control"
+        formControlName="firstname"
+        required
+        name="firstname"
+        [(ngModel)]="cv.firstname"
+      />
+
+      <div
+        *ngIf="form.controls['firstname'].dirty && (form.controls['firstname'].errors?.['required']) "
+        class="alert alert-danger"
+      >
+        <div
+          *ngIf="form.controls['firstname'].errors?.['required']"
+          class="errorMessage"
+        >
+          firstname is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <label>Image Name :</label>
+      <input
+        type="text"
+        id="path"
+        class="form-control"
+        formControlName="path"
+        required
+        name="path"
+        [(ngModel)]="cv.path"
+      />
+
+      <div
+        *ngIf="form.controls['path'].dirty && (form.controls['path'].errors?.['required']) "
+        class="alert alert-danger"
+      >
+        <div
+          *ngIf="form.controls['path'].errors?.['required']"
+          class="errorMessage"
+        >
+          image name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <label>job :</label>
+      <input
+        type="text"
+        id="job"
+        class="form-control"
+        formControlName="job"
+        required
+        name="job"
+        [(ngModel)]="cv.job"
+      />
+
+      <div
+        *ngIf="form.controls['job'].dirty && (form.controls['job'].errors?.['required']) "
+        class="alert alert-danger"
+      >
+        <div
+          *ngIf="form.controls['job'].errors?.['required']"
+          class="errorMessage"
+        >
+          job is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <label>cin :</label>
+      <input
+        type="text"
+        id="cin"
+        class="form-control"
+        formControlName="cin"
+        required
+        [(ngModel)]="cv.cin"
+      />
+
+      <div
+        *ngIf="(form.controls['cin'].errors?.['required'] || form.controls['cin'].errors?.['minlength'] || form.controls['cin'].errors?.['pattern'])  && form.controls['cin'].dirty"
+        class="alert alert-danger"
+      >
+        <div
+          *ngIf="form.controls['cin'].errors?.['required']"
+          class="errorMessage"
+        >
+          cin is required!
+        </div>
+        <div
+          *ngIf="form.controls['cin'].errors?.['pattern']"
+          class="errorMessage"
+        >
+          cin must contain only numbers!
+        </div>
+        <div
+          *ngIf="form.controls['cin'].errors?.['minlength']"
+          class="errorMessage"
+        >
+          cin must be at least 8 characters long!
+        </div>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <label>age :</label>
+      <input
+        type="text"
+        id="age"
+        class="form-control"
+        formControlName="age"
+        required
+        [(ngModel)]="cv.age"
+      />
+
+      <div
+        *ngIf="(form.controls['age'].errors?.['required'] || form.controls['age'].errors?.['pattern'])  && form.controls['age'].dirty"
+        class="alert alert-danger"
+      >
+        <div
+          *ngIf="form.controls['age'].errors?.['required']"
+          class="errorMessage"
+        >
+        age is required.
+        </div>
+        <div
+          *ngIf="form.controls['age'].errors?.['pattern']"
+          class="errorMessage"
+        >
+        age must be a number
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <button
+      type="submit"
+      class="submitButton"
+      [disabled]="!form.valid"
+      (click)="submitForm()"
+    >
+      submit
+    </button>
+    <!-- <div *ngIf="this.isSubmitted">
+        submitted successfully :),
+        user=> email: {{this.user.email}} password: {{this.user.pass}}
+    </div> -->
+  </form>
+</div>

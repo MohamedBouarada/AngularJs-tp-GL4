@@ -23,6 +23,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { AuthentificationComponent } from './authentification/authentification.component';
+import { AddCvFormComponent } from './add-cv-form/add-cv-form.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { AuthentificationComponent } from './authentification/authentification.c
     RouterSimulatorComponent,
     UserDetailsComponent,
     AuthentificationComponent,
+    AddCvFormComponent,
   ],
   imports: [
     CommonModule,

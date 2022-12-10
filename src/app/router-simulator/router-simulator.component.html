@@ -1,8 +1,9 @@
-<!-- <select   #selectField>
-    <option [routerLink]="['/cv']" >cv </option>
-    <option [routerLink]="['/carte-visite']" >Carte Visite</option>
-    <option [routerLink]="['/mini-word']" >miniword</option>
-    <option [routerLink]="['/first-component']" >Color</option>
+<!-- <select   #selectField class="dropdown">
+    <option [routerLink]="['/cv']" routerLinkActive="active" >cv </option>
+    <option [routerLink]="['/carte-visite']" routerLinkActive="active" >Carte Visite</option>
+    <option [routerLink]="['/mini-word']" routerLinkActive="active" >miniword</option>
+    <option [routerLink]="['/first-component']" routerLinkActive="active" >Color</option>
+    <option [routerLink]="['/authentification']"  routerLinkActive="active" >authentification</option>
 </select>  -->
 <select  (change)="changeRoute(selectField.value)" #selectField class="dropdown">
     <option value=""></option>
@@ -11,4 +12,5 @@
     <option [value]="['/mini-word']" >miniword</option>
     <option [value]="['/first-component']" >Color</option>
     <option [value]="['/authentification']" >authentification</option>
+    <option [value]="['/addCv']" >add CV</option>
 </select> 
