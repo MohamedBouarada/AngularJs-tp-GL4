@@ -19,5 +19,10 @@ export class EmbaucheService {
   getCv() {
     return this.listeEmbauche;
   }
-  
+  removeCvsEmbauche(id:Number){
+    const idx = this.listeEmbauche.findIndex((cv) => cv.id === id);
+    if (idx !== -1) {
+      this.listeEmbauche.splice(idx, 1);
+    }
+  }
 }
